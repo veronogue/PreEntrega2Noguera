@@ -1,0 +1,184 @@
+/*CSS*/
+    
+
+.container {
+    max-width: 1200px; /* Define un ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenedor en el centro de la página */
+    overflow: hidden; /* Controla el desbordamiento */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Divide el encabezado en tres columnas */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: black; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto */
+}
+
+header {
+    text-align: center; /* Centra el contenido horizontalmente */
+    /* Otras reglas de estilo para el encabezado */
+}
+
+.social-icons, .logo, .dropdown {
+    display: inline-block; /* Alinea los elementos en línea */
+}
+
+.logo img {
+    display: block; /* Centra la imagen horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    padding: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px; /* Espacio entre los iconos de redes sociales */
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha */
+    padding: 10px;
+}
+
+#main-menu {
+    display: none; /* Oculta el menú desplegable por defecto */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #c81212;
+}
+
+#main-menu ul {
+    list-style:georgian;
+    padding: 0;
+}
+
+#main-menu ul li {
+    padding: 10px;
+}
+
+h1  {
+    display: flex;
+    justify-content: center
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}   
+
+.card-text-bg-dark {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-container {
+    display: flex; /* Usa flexbox para colocar las columnas una al lado de la otra */
+}
+
+.form-column {
+    flex: 1; /* Hace que ambas columnas tengan el mismo ancho */
+    margin: 10px; /* Agrega margen entre las columnas */
+}
+
+.form-column h2 {
+    text-align: center; /* Centra el título de cada columna */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    margin-bottom: 5px;
+}
+
+.form-row input {
+    width: 100%; /* Rellena todo el ancho del contenedor de la fila */
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    background-color: black; /* Color de fondo del footer */
+    color: #fff; /* Color de texto */
+    padding: 10px;
+}
+
+footer {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.contact-info, .phone, .social-icons {
+    flex: 1; /* Los tres elementos ocupan el mismo espacio horizontalmente */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; /* Alinea las redes sociales a la derecha */
+}
+
+.social-icons a {
+    margin-left: 10px; /* Espacio entre los iconos de redes sociales */
+    text-decoration: none;
+}
+
+.contact-info, .phone, .social-icons {
+    flex: 1; /* Los tres elementos ocupan el mismo espacio horizontalmente */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; /* Alinea las redes sociales a la derecha */
+}
+
+.social-icons a {
+    margin-left: 10px; /* Espacio entre los iconos de redes sociales */
+    text-decoration: none;
+    color: #fff;
+}
+
+.quienes.somos {
+    justify-content: center;
+}
+
+/* Estilos para el botón del menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    #menu-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    #main-menu {
+        display: block;
+    }
+}
