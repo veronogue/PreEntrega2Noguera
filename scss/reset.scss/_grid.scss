@@ -1,0 +1,32 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    align-items: center; 
+    background-color: black; 
+    color: #fff; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid {
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    &-item {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    } 
+}

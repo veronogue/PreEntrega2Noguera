@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    justify-content: space-between; 
+    background-color: black; 
+    color: #fff; 
+    padding: 10px;
+    text-align: center; 
+}
+
+
+.contact-info, .phone, .social-icons {
+    flex: 1; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; 
+
+    a {
+        margin-left: 10px; 
+        text-decoration: none;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; 
+}

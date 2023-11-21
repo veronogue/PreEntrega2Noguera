@@ -1,0 +1,21 @@
+//RESET
+
+@import "./reset.scss/reset.scss" ;
+@import "./reset.scss/mixin" ;
+@import "./reset.scss/vars" ;
+@import "./reset.scss/grid" ;
+
+//COMPONENTES
+
+@import "./buttons" ;
+
+//LAYOUT
+
+@import "./header" ;
+@import "./body" ;
+@import "./footer" ;
+@import "./textos" ;
+
+//MC
+
+@import "./reset.scss/mq" ;

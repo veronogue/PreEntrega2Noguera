@@ -1,181 +1,241 @@
-/*CSS*/
-    
-
-.container {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    overflow: hidden; 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; 
-    align-items: center; 
-    background-color: black; 
-    color: #fff; 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  max-width: 800px;
+  margin: 20px auto;
 }
-header {
-    text-align: center; 
+.grid-item {
+  overflow: hidden;
 }
-
-.social-icons, .logo, .dropdown {
-    display: inline-block; 
-}
-
-.logo img {
-    display: block; 
-    margin: 0 auto; 
-}
-.social-icons {
-    display: flex;
-    justify-content: flex-start; 
-    padding: 10px;
-}
-
-.social-icons a {
-    margin-right: 10px; 
-    text-decoration: none;
-    color: #fff;
-}
-
-.logo {
-    display: flex;
-    justify-content: center; 
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .menu {
-    display: flex;
-    justify-content: flex-end; 
-    padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
 }
 
 #main-menu {
-    display: none; 
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #c81212;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #c81212;
 }
-
 #main-menu ul {
-    list-style:georgian;
-    padding: 0;
+  list-style: georgian;
+  padding: 0;
 }
-
 #main-menu ul li {
-    padding: 10px;
+  padding: 10px;
 }
 
-h1  {
-    display: flex;
-    justify-content: center
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  text-align: center;
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
+.social-icons, .logo, .dropdown {
+  display: inline-block;
 }
 
-p {
-    display: flex;
-    justify-content: center;
-}   
-
-.card-text-bg-dark {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.logo {
+  display: flex;
+  justify-content: center;
 }
-
-.form-container {
-    display: flex; 
-}
-
-.form-column {
-    flex: 1; 
-    margin: 10px; 
-}
-
-.form-column h2 {
-    text-align: center; 
-}
-
-.form-row {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.form-row label {
-    margin-bottom: 5px;
-}
-
-.form-row input {
-    width: 100%; 
-}
-
-
-footer {
-    display: flex;
-    justify-content: space-between; 
-    background-color: black; 
-    color: #fff; 
-    padding: 10px;
-}
-
-footer {
-    text-align: center; 
-}
-
-.contact-info, .phone, .social-icons {
-    flex: 1; 
+.logo img {
+  display: block;
+  margin: 0 auto;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: flex-end; 
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
 }
-
 .social-icons a {
-    margin-left: 10px; 
-    text-decoration: none;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
 }
 
-.contact-info, .phone, .social-icons {
-    flex: 1; 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: flex-end; 
-}
-
-.social-icons a {
-    margin-left: 10px; 
-    text-decoration: none;
-    color: #fff;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .quienes.somos {
-    justify-content: center;
+  justify-content: center;
 }
 
-/* Pantallas pequeñas */
+.form-container {
+  display: flex;
+}
+.form-column {
+  flex: 1;
+  margin: 10px;
+}
+.form-column h2 {
+  text-align: center;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-row label {
+  margin-bottom: 5px;
+}
+.form-row input {
+  width: 100%;
+}
+
+.texto {
+  text-align: justify;
+  max-width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-info, .phone, .social-icons {
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-icons a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+}
+main h2 {
+  display: flex;
+  justify-content: center;
+}
+main p {
+  display: flex;
+  justify-content: safe;
+}
+
+.card-text-bg-dark {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-
-    #menu-button {
-        display: block;
-        cursor: pointer;
-    }
-
-    #main-menu {
-        display: block;
-    }
+  .menu {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    cursor: pointer;
+  }
+  #main-menu {
+    display: block;
+  }
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.grid-container-item {
+  overflow: hidden;
+}
+.grid-container-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+.form-container {
+  display: flex;
+}
+.form-container .form-column {
+  flex: 1;
+  margin: 10px;
+}
+.form-container .form-column h2 {
+  text-align: center;
+}
+.form-container .form-column .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-container .form-column .form-row label {
+  margin-bottom: 5px;
+}
+.form-container .form-column .form-row input, .form-container .form-column .form-row select, .form-container .form-column .form-row textarea {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .form-container {
+    flex-direction: column;
+  }
+  .form-container .form-column {
+    margin: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
