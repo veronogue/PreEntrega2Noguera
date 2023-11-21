@@ -1,3 +1,181 @@
+/*CSS*/
+    
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    align-items: center; 
+    background-color: black; 
+    color: #fff; 
+}
+header {
+    text-align: center; 
+}
+
+.social-icons, .logo, .dropdown {
+    display: inline-block; 
+}
+
+.logo img {
+    display: block; 
+    margin: 0 auto; 
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-start; 
+    padding: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px; 
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; 
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px;
+}
+
+#main-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #c81212;
+}
+
+#main-menu ul {
+    list-style:georgian;
+    padding: 0;
+}
+
+#main-menu ul li {
+    padding: 10px;
+}
+
+h1  {
+    display: flex;
+    justify-content: center
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}   
+
+.card-text-bg-dark {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-container {
+    display: flex; 
+}
+
+.form-column {
+    flex: 1; 
+    margin: 10px; 
+}
+
+.form-column h2 {
+    text-align: center; 
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    margin-bottom: 5px;
+}
+
+.form-row input {
+    width: 100%; 
+}
 
 
-/*# sourceMappingURL=style.css.map */
+footer {
+    display: flex;
+    justify-content: space-between; 
+    background-color: black; 
+    color: #fff; 
+    padding: 10px;
+}
+
+footer {
+    text-align: center; 
+}
+
+.contact-info, .phone, .social-icons {
+    flex: 1; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.social-icons a {
+    margin-left: 10px; 
+    text-decoration: none;
+}
+
+.contact-info, .phone, .social-icons {
+    flex: 1; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.social-icons a {
+    margin-left: 10px; 
+    text-decoration: none;
+    color: #fff;
+}
+
+.quienes.somos {
+    justify-content: center;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    #menu-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    #main-menu {
+        display: block;
+    }
+}
