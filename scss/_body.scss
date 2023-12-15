@@ -3,12 +3,17 @@
     margin: 0 auto; 
     overflow: hidden; 
 }
+
 body {
     font-family: Arial, sans-serif;
+    margin-top: $margin-top;
     margin: 0;
-    padding: 0;
-
+    padding: 0; 
     
+}
+
+#carouselExampleIndicators {
+    margin-top: $margin-top;
 }
 
 .quienes.somos {

@@ -33,27 +33,6 @@ body {
   display: block;
 }
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-}
-
-#main-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #c81212;
-}
-#main-menu ul {
-  list-style: georgian;
-  padding: 0;
-}
-#main-menu ul li {
-  padding: 10px;
-}
-
 header {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -237,5 +216,3 @@ main p {
     margin: 10px 0;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

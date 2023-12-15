@@ -16,8 +16,7 @@
 </head>
 <body>
     <div class="container">
-    
-    <header>
+     <header>
         <div class="social-icons">
             <!-- Redes sociales -->
             <a href="https://www.facebook.com/martindelgado.catering/?locale=es_LA">Facebook</a>
@@ -26,20 +25,36 @@
         <div class="logo">
             <img src="./assets/logo-MD.png" alt="Logo">
         </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Menu 
-              </button>
-              <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html">Inicio</a></li>
-                    <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
-                    <li><a class="dropdown-item" href="./pages/galeria.html">Galeria</a></li>
-                    <li><a class="dropdown-item" href="./pages/nuestros-servicios.html">Nuestros servicios</a></li>
-                    <li><a class="dropdown-item" href="./pages/quienes-somos.html">Quienes somos</a></li>
+      <!-- Menu -->
+      <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/nuestros-servicios.html">Nuestros servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/quienes-somos.html">Quienes somos</a>
+                    </li>
                 </ul>
+            </div>
         </div>
+    </div>
+   
     </header>
-        <br>
     <main>
         <!--Carrusell-->
         <div id="carouselExampleIndicators" class="carousel slide">
@@ -68,13 +83,9 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <br>
-        <br>
         <!--Texto-->
         <h1 class="titulo">¿Qué ofrecemos?</h1>
             <p class="text">En Martín Delgado Catering siempre ofrecen lo mejor, por eso seleccionan los ingredientes de sus platos por su sabor y calidad. En un día tan especial ofrecemos variados platos, servicio de postres, bebidas, bocados fríos y calientes</p>
-            <br>
-            <br>
         <!--Cards-->
         <!--Clientes-->
         <div class="card text-bg-dark">
@@ -83,8 +94,6 @@
             </div>
           </div>
     </main>
-    <br>
-    <br>
     <footer>
         <div class="contact-info">
             <p>Planta de elaboracion y oficinas comerciales <em>Ruta 102 Km 23.300</em></p>

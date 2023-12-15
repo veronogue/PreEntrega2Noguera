@@ -16,7 +16,6 @@
 </head>
 <body>
     <div class="container">
-    
         <header>
             <div class="social-icons">
                 <!-- Redes sociales -->
@@ -26,21 +25,35 @@
             <div class="logo">
                 <img src="../assets/logo-MD.png" alt="Logo">
             </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Menu 
-                  </button>
-                  <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                        <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
-                        <li><a class="dropdown-item" href="../pages/galeria.html">Galeria</a></li>
-                        <li><a class="dropdown-item" href="../pages/nuestros-servicios.html">Nuestros servicios</a></li>
-                        <li><a class="dropdown-item" href="../pages/quienes-somos.html">Quienes somos</a></li>
-                    </ul>
+            <!-- Menu -->
+            <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/nuestros-servicios.html">Nuestros servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
     </header>
-        <br>
-        <br>
     <main>
         <h1 class="titulos">Contactate con nosotros</h1>
 
@@ -92,7 +105,6 @@
                             <input type="text" id="campo1" name="campo1" value="Empresa">
                         </div>
                     </div>
-        
                     <div class="form-column">
                         <div class="form-row">
                             <label for="campo6">Tu consulta</label>
@@ -108,12 +120,8 @@
                                     <option>Infantil</option>
                                     <option>Brindis</option>
                                 </select>
-                                <br>
-                                <br>
                                 <label for="text">Fecha</label>
                                 <input type="text" id="comment" name="comment" value="Fecha"/>
-                                <br>
-                                <br>
                                 <label for="select">Carga horaria</label>
                                 <select name="Carga horaria">
                                     <option>2hs</option>
@@ -121,24 +129,16 @@
                                     <option>6hs</option>
                                     <option>8hs</option>
                                 </select>
-                                <br>
-                                <br>
                                 <input type="text" id="comment" name="comment" value="Cantidad de invitados"/>
-                                 <br>
-                                 <br>
                                <textarea name="Comentarios" minlength="20" maxlength="60" required>Comentarios</textarea>
                         </form>
                         </div>
                 </div>
             </form>
-            
-         <br>
         <li class="button">
             <button type="submit">Envíanos tu consulta</button>
         </li>
     </main>
-    <br>
-    <br>
     <footer>
         <div class="contact-info">
             <p>Planta de elaboracion y oficinas comerciales <em>Ruta 102 Km 23.300</em></p>

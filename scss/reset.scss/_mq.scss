@@ -1,14 +1,35 @@
 @media (max-width: 768px) {
-    .menu {
-        display: none;
 
-        &-button {
-            display: block;
-            cursor: pointer;
-        }
+    .navbar-toggler {
+    background: none;
+    border: none;
+    padding: 0;
+
+        &-icon {
+    background-color: #fff; 
+}
+}
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
     }
 
-    #main-menu {
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .collapse.navbar-collapse {
+        display: none;
+    }
+
+    .collapse.navbar-collapse.show {
         display: block;
     }
 }

@@ -1,22 +1,6 @@
-.menu {
+
+.navbar-brand {
     display: flex;
     justify-content: flex-end; 
     padding: 10px;
-}
-
-#main-menu {
-    display: none; 
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #c81212;
-
-    ul {
-        list-style:georgian;
-        padding: 0;
-
-        li {
-            padding: 10px;
-    }
-}
 }

@@ -53,29 +53,6 @@ header {
     justify-content: center; 
 }
 
-.menu {
-    display: flex;
-    justify-content: flex-end; 
-    padding: 10px;
-}
-
-#main-menu {
-    display: none; 
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #c81212;
-}
-
-#main-menu ul {
-    list-style:georgian;
-    padding: 0;
-}
-
-#main-menu ul li {
-    padding: 10px;
-}
-
 h1  {
     display: flex;
     justify-content: center
@@ -170,16 +147,37 @@ footer {
 
 /* Pantallas pequeñas */
 @media (max-width: 768px) {
-    .menu {
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; 
+
+    @media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .collapse.navbar-collapse {
         display: none;
     }
 
-    #menu-button {
-        display: block;
-        cursor: pointer;
-    }
-
-    #main-menu {
+    .collapse.navbar-collapse.show {
         display: block;
     }
+}
+}
 }
