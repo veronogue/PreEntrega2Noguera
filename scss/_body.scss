@@ -1,21 +1,27 @@
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: $margin-top;
+    margin: 0;
+    padding: 0;   
+}
+
 .container {
     max-width: 1200px; 
-    margin: 0 auto; 
+    margin-bottom: 0; 
     overflow: hidden; 
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin-top: $margin-top;
-    margin: 0;
-    padding: 0; 
-    
+.carousel-slide {
+    border:2cm
 }
 
 #carouselExampleIndicators {
-    margin-top: $margin-top;
-}
-
+    margin-top: $margin-top
+        }
+ 
 .quienes.somos {
     justify-content: center;
 }
@@ -42,18 +48,15 @@ body {
         label {
             margin-bottom: 5px;
         }
-    
+
         input {
             width: 100%; 
         }
-    }
-    
+    } 
 }
 
-.texto {
-    text-align: justify;
-    max-width: 100%; 
+.card {
+    width: 1fr; 
+    max-width: 100%
  }
-    
 
-     

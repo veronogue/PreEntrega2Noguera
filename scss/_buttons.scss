@@ -1,6 +1,45 @@
-
-.navbar-brand {
-    display: flex;
-    justify-content: flex-end; 
-    padding: 10px;
+navbar-button {
+    margin: auto;
+    border-radius: 0,375rems;
 }
+
+.navbar {
+    display: flex;
+    justify-content: right; 
+    align-items: right;
+    padding: 10px;
+
+    &-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: right;
+          }
+
+    &-toggler {
+        padding: none;
+        transition: navbar-toggler-transition;  
+    
+        &:hover {
+            text-decoration: none;
+          }
+        
+        &:focus {
+            text-decoration: none;
+            outline: 0;
+            box-shadow: none;
+          }
+        
+        &-icon {
+             display: inline-block;
+             width: 1.5em;
+             height: 1.5em;
+             vertical-align: right;
+             background-repeat: none;
+             background-position: center;
+             background-size: 0%;
+      }
+    }
+}
+
+
+

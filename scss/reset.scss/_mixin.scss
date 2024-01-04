@@ -1,2 +1,21 @@
 //Fragmentos de codigo que se repiten que puedo reutilizar
 
+.grid {
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+        max-width: 800px;
+        margin: 20px auto;
+
+    &-item {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+     }
+    }
+}
